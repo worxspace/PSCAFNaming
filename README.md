@@ -25,9 +25,9 @@ The example generates a 23 characters name compatible with the specification for
 dev-aztfmod-001
 
 ```powershell
-$ResourceGroupName = New-CAFResourceName -ResourceType 'resource group' -Prefixes a,b -Suffixes y,z
+New-CAFResourceName -ResourceType 'resource group' -Prefixes a,b -Suffixes y,z
 
-$ResourceGroupName
+ab-rg-yz
 ```
 
 The module generates a name using the input parameters and automatically appends a prefix (if defined), a caf prefix (resource type) and postfix (if defined) in addition to a generated padding string(coming soon) based on the selected naming convention.
